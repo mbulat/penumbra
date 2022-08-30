@@ -81,14 +81,14 @@ Color: blueplus      rgb( 97, 163, 230)        75          LightBlue
 Color: purpleplus    rgb(164, 143, 225)        140         LightMagenta
 Color: magentaplus   rgb(208, 128, 182)        175         LightMagenta
 
-Color: redplusplus     rgb(245, 140, 129)        174         Red
-Color: orangeplusplus  rgb(206, 144,  66)        172         Brown
-Color: yellowplusplus  rgb(156, 167,  72)        143         LightYellow
-Color: greenplusplus   rgb( 80, 181, 132)        72          LightGreen
-Color: cyanplusplus    rgb(  0, 179, 194)        37          LightCyan
-Color: blueplusplus    rgb( 97, 163, 230)        75          LightBlue
-Color: purpleplusplus  rgb(164, 143, 225)        140         LightMagenta
-Color: magentaplusplus rgb(208, 128, 182)        175         LightMagenta
+Color: redplusplus     rgb(245, 140, 129)        210         Red
+Color: orangeplusplus  rgb(224, 159,  71)        215         Brown
+Color: yellowplusplus  rgb(169, 184,  82)        143         LightYellow
+Color: greenplusplus   rgb( 84, 199, 148)        79          LightGreen
+Color: cyanplusplus    rgb(  0, 196, 215)        80          LightCyan
+Color: blueplusplus    rgb(110, 178, 253)        75          LightBlue
+Color: purpleplusplus  rgb(182, 156, 246)        147         LightMagenta
+Color: magentaplusplus rgb(229, 140, 197)        175         LightMagenta
 ; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
 ; }}}
 ; Terminal colors {{{
