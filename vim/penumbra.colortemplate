@@ -54,14 +54,14 @@ Background: dark
 ; Color palette {{{
 ; Color name         GUI                     Base256     Base16 (optional)
 Color: sunplus       rgb(255, 253, 251)        231         White
-Color: sun           rgb(255, 247, 237)        255         White
-Color: sunminus      rgb(242, 230, 212)        254         White
-Color: skyplus       rgb(190, 190, 190)        250         LightGray
-Color: sky           rgb(143, 143, 143)        246         Gray
-Color: skyminus      rgb( 99,  99,  99)        241         Gray
-Color: shadeplus     rgb( 62,  64,  68)        238         DarkGray
-Color: shade         rgb( 48,  51,  56)        236         DarkGray
-Color: shademinus    rgb( 36,  39,  43)        235         Black
+Color: sun           rgb(255, 247, 237)        255         LightGray
+Color: sunminus      rgb(242, 230, 212)        254
+Color: skyplus       rgb(190, 190, 190)        250
+Color: sky           rgb(143, 143, 143)        246         DarkGray
+Color: skyminus      rgb( 99,  99,  99)        241
+Color: shadeplus     rgb( 62,  64,  68)        238
+Color: shade         rgb( 48,  51,  56)        236         Black
+Color: shademinus    rgb( 36,  39,  43)        235
 
 Color: red           rgb(202, 115, 108)        167         DarkRed
 Color: orange        rgb(186, 130,  58)        137         Brown
@@ -96,17 +96,40 @@ Term colors: shade red green yellow blue magenta cyan sky
 Term colors: shadeplus orange greenplus yellowplus
 Term colors: blueplus purple cyanplus skyplus
 ; }}}
-
 ; Default highlight groups {{{
-Variant: gui 256 8
+Variant: gui 256
   Normal           sky             shade
   Terminal         sky             shade
+; Default highlight groups {{{
+
+Variant: 256
+  Normal           sky             none
+  Terminal         sky             none
+
+Variant: 16 8
+Normal           sky             none
+Terminal         sky             none
+LineNr           sky             none
+ErrorMsg             red             shade             reverse
+TabLine              sky             shade             reverse
+Pmenu                sky             shade
+PmenuSbar            sky             shade
+PmenuSel             sky             sun               reverse
+PmenuThumb           sky             shade
+ToolbarButton        sky             shade             bold
+StatusLine           none             shade             reverse
+StatusLineNC         sky             sun               reverse
+Comment              shade             none              italic
+SpecialKey           green           shade
+
+
+Variant: gui 256
 
 ; Group              Foreground      Background        Attributes
 ColorColumn          fg              red
 Conceal              none            none
-Cursor               sky             shade
-CursorColumn         none            shadeplus
+Cursor               none            shade
+CursorColumn         none            shade
 CursorLine           none            shadeplus
 CursorLineNr         none            shadeplus         bold
 DiffAdd              green           shadeplus         s=green
